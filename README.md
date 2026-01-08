@@ -20,17 +20,13 @@ Build and validate an endpoint telemetry pipeline for SOC visibility using Elast
 ## Architecture
 Windows Endpoint → Sysmon → Elastic Agent (Fleet) → Elastic SIEM → Kibana
 
-## Validation
-Telemetry was validated in Kibana Discover using KQL queries to confirm:
-- Successful event ingestion
-- Accurate timestamps
-- Host attribution
-- Process and network visibility
+## Validation Evidence
+
+![Kibana Discover – Sysmon Endpoint Telemetry](screenshots/kibana-discover-sysmon.png)
 
 ## SOC Relevance
 This project demonstrates endpoint telemetry ingestion, SIEM validation, and investigation-ready visibility aligned with SOC analyst workflows and MITRE ATT&CK techniques.
 
-## Evidence
-![Kibana Discover – Sysmon Telemetry](screenshots/kibana-discover-sysmon.png)
+
 
 
