@@ -1,4 +1,4 @@
-# Elastic SIEM + Sysmon — Endpoint Telemetry Pipeline
+# Elastic SIEM + Sysmon, Endpoint Telemetry Pipeline
 
 ## Objective
 Build and validate an endpoint telemetry pipeline for SOC visibility using Elastic SIEM and Sysmon.
@@ -22,7 +22,7 @@ Windows Endpoint → Sysmon → Elastic Agent (Fleet) → Elastic SIEM → Kiban
 
 ## Validation Evidence
 
-![Kibana Discover – Sysmon Endpoint Telemetry](screenshots/kibana-discover-sysmon.png)
+![Kibana Discover, Sysmon Endpoint Telemetry](screenshots/kibana-discover-sysmon.png)
 
 ## SOC Relevance
 This project demonstrates endpoint telemetry ingestion, SIEM validation, and investigation-ready visibility aligned with SOC analyst workflows and MITRE ATT&CK techniques.
