@@ -1,50 +1,39 @@
-# Elastic SIEM + Sysmon, Endpoint Telemetry Pipeline
+# Elastic SIEM + Fleet + Sysmon — Endpoint Telemetry Pipeline
 
-## Scenario
-Simulated SOC environment to monitor and analyze security telemetry.
-
-## Tools Used
-- Elastic SIEM
-- Sysmon
-- Fleet
-- KQL
-- Kibana
-
-## What Was Implemented
-- Ingested endpoint security events
-- Built detection queries
-- Validated SOC visibility in SIEM dashboards
-
-## Outcome
-- Demonstrated end-to-end SIEM ingestion
-- Enabled SOC-style alerting and investigation
-
-## Objective
-Build and validate an endpoint telemetry pipeline for SOC visibility using Elastic SIEM and Sysmon.
-
-## Environment
+## Environment / Tools
 - Elastic SIEM (Elastic Cloud)
-- Elastic Agent with Fleet
-- Windows endpoint
+- Elastic Agent (Fleet-managed)
+- Windows 10/11 endpoint
 - Sysmon v15+
+- Kibana (Discover, Security app)
 - KQL
-- Kibana
 
-## Data Collected
-- Process creation events
-- Network connection events
-- PowerShell execution events
-- Windows security telemetry
+## Data Ingested
+- Process creation events (Sysmon Event ID 1)
+- Network connection events (Sysmon Event ID 3)
+- PowerShell execution telemetry
+- Windows security and system logs
 
+## Detections / Findings
+- Verified successful ingestion of high-fidelity Sysmon telemetry into Elastic SIEM
+- Identified process execution chains and parent/child relationships using KQL
+- Observed outbound network connections tied to specific processes
+- Confirmed visibility of PowerShell activity for investigation and threat hunting
+- Validated timestamp accuracy and host attribution for SOC triage
+  
 ## Architecture
-Windows Endpoint → Sysmon → Elastic Agent (Fleet) → Elastic SIEM → Kibana
+Windows Endpoint 
+→ Sysmon 
+→ Elastic Agent (Fleet) 
+→ Elastic SIEM 
+→ Kibana (Discover / Security)
 
 ## Validation Evidence
-
-![Kibana Discover, Sysmon Endpoint Telemetry](screenshots/kibana-discover-sysmon.png)
+![Kibana Discover — Sysmon Endpoint Telemetry](screenshots/kibana-discover-sysmon.png)
 
 ## SOC Relevance
-This project demonstrates endpoint telemetry ingestion, SIEM validation, and investigation-ready visibility aligned with SOC analyst workflows and MITRE ATT&CK techniques.
+This project demonstrates real-world SOC fundamentals including endpoint telemetry ingestion, log validation, investigation-ready visibility, and query-driven analysis aligned with MITRE ATT&CK techniques. The pipeline mirrors how enterprise SOC teams monitor Windows endpoints for suspicious behavior and respond to alerts.
+
 
 
 
