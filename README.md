@@ -1,5 +1,24 @@
 # Elastic SIEM + Sysmon, Endpoint Telemetry Pipeline
 
+## Scenario
+Simulated SOC environment to monitor and analyze security telemetry.
+
+## Tools Used
+- Elastic SIEM
+- Sysmon
+- Fleet
+- KQL
+- Kibana
+
+## What Was Implemented
+- Ingested endpoint security events
+- Built detection queries
+- Validated SOC visibility in SIEM dashboards
+
+## Outcome
+- Demonstrated end-to-end SIEM ingestion
+- Enabled SOC-style alerting and investigation
+
 ## Objective
 Build and validate an endpoint telemetry pipeline for SOC visibility using Elastic SIEM and Sysmon.
 
