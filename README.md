@@ -1,5 +1,8 @@
 # Elastic SIEM + Fleet + Sysmon — Endpoint Telemetry Pipeline
 
+## Overview
+Built and validated a Fleet-managed Elastic SIEM endpoint telemetry pipeline using Sysmon to provide investigation-ready visibility into Windows process, network, and PowerShell activity.
+
 ## Environment / Tools
 - Elastic SIEM (Elastic Cloud)
 - Elastic Agent (Fleet-managed)
@@ -15,7 +18,7 @@
 - Windows security and system logs
 
 ## Detections / Findings
-- Verified successful ingestion of high-fidelity Sysmon telemetry into Elastic SIEM
+- Verified continuous ingestion of high-fidelity Sysmon telemetry into Elastic SIEM via Fleet
 - Identified process execution chains and parent/child relationships using KQL
 - Observed outbound network connections tied to specific processes
 - Confirmed visibility of PowerShell activity for investigation and threat hunting
